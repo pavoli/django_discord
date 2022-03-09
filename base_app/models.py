@@ -24,7 +24,7 @@ class Room(models.Model):
         return self.name
 
 
-class Meesage(models.Model):
+class Message(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     body = models.TextField()
